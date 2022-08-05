@@ -16,7 +16,7 @@ $this->setFrameMode(true);
 
 <div class="article-card">
     <div class="article-card__title"><?=$arResult["NAME"]?></div>
-    <div class="article-card__date">15 авг 2019</div>
+    <div class="article-card__date"><?=$arResult["PROPERTIES"]["DATE"]?></div>
     <div class="article-card__content">
         <div class="article-card__image sticky">
             <img src="<?=$arResult["DETAIL_PICTURE"]["SRC"]?>" alt="<?=$arResult["DETAIL_PICTURE"]["ALT"]?>" data-object-fit="cover"/>
