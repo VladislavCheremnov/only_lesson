@@ -13,19 +13,19 @@
 $this->setFrameMode(true);
 ?>
 
-
-<div class="article-card">
-    <div class="article-card__title"><?=$arResult["NAME"]?></div>
-    <div class="article-card__date"><?=$arResult["PROPERTIES"]["DATE"]?></div>
-    <div class="article-card__content">
-        <div class="article-card__image sticky">
-            <img src="<?=$arResult["DETAIL_PICTURE"]["SRC"]?>" alt="<?=$arResult["DETAIL_PICTURE"]["ALT"]?>" data-object-fit="cover"/>
-        </div>
-        <div class="article-card__text">
-            <div class="block-content" data-anim="anim-3">
-                <?=$arResult["DETAIL_TEXT"]?>
+    <div class="article-card">
+        <div class="article-card__title"><?=$arResult["NAME"]?></div>
+        <div class="article-card__date"><?=$arResult["PROPERTIES"]["DATE"]?></div>
+        <div class="article-card__content">
+            <div class="article-card__image sticky">
+                <img src="<?=$arResult["DETAIL_PICTURE"]["SRC"]?>" alt="<?=$arResult["DETAIL_PICTURE"]["ALT"]?>" data-object-fit="cover"/>
             </div>
-            <a class="article-card__button" href="<?=$arResult["FOLDER"].$arResult["URL_TEMPLATES"]["news"]?>">Назад к новостям</a>
+            <div class="article-card__text">
+                <div class="block-content" data-anim="anim-3">
+                    <?=$arResult["DETAIL_TEXT"]?>
+                </div>
+                <a class="article-card__button" href="<?=$arResult["FOLDER"].$arResult["URL_TEMPLATES"]["news"]?>">Назад к новостям</a>
+            </div>
         </div>
     </div>
-</div>
+
